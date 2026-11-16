@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "finance-management-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/financeManagement/FinanceManagementWebPart.js",
+          "manifest": "./src/webparts/financeManagement/FinanceManagementWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "FinanceManagementWebPartStrings": "lib/webparts/financeManagement/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}

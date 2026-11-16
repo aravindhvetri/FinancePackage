@@ -1,0 +1,356 @@
+.pageBg {
+  background: #f5f6f8;
+  padding: 20px;
+}
+
+/* White Card */
+.headerCard {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.10);
+}
+
+/* Row */ 
+.row {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+} 
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px 20px;
+  align-items: start;
+}
+
+/* Field */
+.field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+/* Values */
+.value {
+  font-size: 13px;
+  font-weight: 600;
+  color: black; //#111827;
+}
+
+.valueMuted {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.valuePending {
+  font-size: 13px;
+  font-weight: 600;
+  color: #d4ac0d;
+}
+
+/* Vertical Divider */
+.divider {
+  width: 2px;
+  height: 36px;
+  background: #c0c2c7a1; //#e5e7eb;
+  margin: 0 12px;
+}
+
+/* Status Badge */
+.statusBadge {
+  align-self: flex-start;
+  background: #fff4e5;
+  color: #e65100;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.bodyCard{
+     background: #f4fbfc;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.10);
+  margin-top: 10px;
+}
+
+.valueApproved{
+  font-size: 13px;
+color: #0f763c;
+font-weight: 600;
+}
+
+.valueRejected{
+color: red;
+}
+
+
+.container {
+    padding: 0;
+    margin: 0;
+}
+
+.buttonsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.submitButton {
+  background-color: #3F9F4E;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-family: osSemiBold, sans-serif;
+  font-size: 14px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all 100ms;
+  font-weight: 600;
+
+  &:hover {
+    background-color: #054621;
+  }
+}
+
+.cancelButton{
+  background-color: #8c8c8c;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-family: osSemiBold, sans-serif;
+  font-size: 14px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all 100ms;
+  font-weight: 600;
+
+  &:hover {
+    background-color: #545353;
+  }
+}
+
+.rejectButton{
+  background-color: #fc1212;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-family: osSemiBold, sans-serif;
+  font-size: 14px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all 100ms;
+
+  &:hover {
+    background-color: #c40404;
+  }
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 columns */
+  gap: 20px; /* spacing between fields */
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .formRow {
+    grid-template-columns: 1fr; /* stack vertically on mobile */
+  }
+}
+.toggle{
+    font-weight: 500;
+        font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif !important;
+        font-size: 15px;
+        //padding-top: 0.5rem;
+        padding-bottom: 0.2px;
+}
+
+.halfColumn {
+  flex: 1;
+}
+
+.splitField {
+  display: flex;
+  gap: 12px; // spacing between Month & Year
+}
+
+.splitField > * {
+  flex: 1; // each takes 50% of the half column
+}
+
+
+.toggleField {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.toggleLabel {
+  font-weight: 600;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  color: #0b4d53;
+}
+
+.toggleButton {
+   width: fit-content;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.labelWithIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between; 
+  width: 100%;
+  white-space: nowrap; 
+  gap: 135px;
+  
+}
+
+.labelWithIcon i {
+  font-size: 12px;
+  color: #fff;
+  background-color: #0f763c ;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  padding-top: 4px;
+  border-radius: 3px;
+}
+
+.labelWithIcon i:hover {
+  color: #fff;
+    background-color: #0f763c ;
+}
+
+.iconGroup {
+  display: inline-flex;
+  gap: 6px;
+}
+
+/* Dark background overlay */
+.confirmOverlay {
+  position: fixed;
+  inset: 0; /* top, right, bottom, left = 0 */
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* Popup box */
+.confirmBox {
+  background: #ffffff;
+  padding: 24px 28px;
+  border-radius: 8px;
+  width: 360px;
+  max-width: 90%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  animation: fadeInScale 0.2s ease-out;
+}
+
+/* Message text */
+
+.confirmBox p:nth-of-type(1){
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f763c;
+}
+
+
+.confirmBox p:nth-of-type(2) {
+  font-size: 15px;
+  font-weight: 500;
+  color: #323130;
+  margin-bottom: 24px;
+}
+
+/* Buttons container */
+.confirmButtons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+ 
+}
+
+
+
+/* Optional animation */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.confirmButtons :global(.p-button) {
+  min-width: 90px;
+}
+
+.confirmButtons :global(.p-button:first-child) {
+  background-color: #8c8c8c;
+  border-color: #8c8c8c;
+}
+
+.confirmButtons :global(.p-button:first-child):hover {
+  background-color: #6f6f6f;
+}
+
+.financeHeader{
+  display:flex;
+  //align-items:center;
+  justify-content: space-between;
+  gap:20px;
+  font-size:14px;
+}
+
+
+.reqId{
+  //background:#e6f7f5;
+  //border:1px solid #0f766e;
+  padding:4px 10px;
+  border-radius:4px;
+  color:#0f766e;
+  text-decoration: none !important;
+}
+
+.balanceAmount{
+  margin-left:auto;
+  font-size:13px;
+  color:#555;
+  text-decoration: none !important;
+}
+
+.checkBox{
+  margin: 0px;
+  width: 16px;
+  height: 16px;
+}
+

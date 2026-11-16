@@ -1,0 +1,218 @@
+.container {
+    width: 100%;
+}
+
+.content {
+    padding: 16px;
+}
+
+.headerRow {
+    display: flex;
+    align-items: end;
+    //justify-content: space-between;
+    justify-content: flex-end;
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+    margin-left: 16px;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.headerBtn {
+    background-color: #3F9F4E;
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.headerBtn:hover {
+    background-color: #0c5e30;
+}
+
+/* Filter row */
+.filterRow {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end; //align-items: center;
+    gap: 16px;
+    padding: 12px 0;
+    border-top: 1px solid #e5e5e5;
+    ;
+    //justify-content: space-between;
+
+}
+
+/* Dropdown */
+.filterDropdown {
+    width: 220px;
+    height: 36px;
+    padding: 0 12px;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 5px;
+    outline: none;
+    color: #555;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.filterDropdownVendor{
+  width: 160px !important;
+   font-weight: 600 !important;
+}
+
+/* Search */
+.searchBox {
+    position: relative;
+    width: 220px;
+}
+
+.searchInput {
+    width: 100%;
+    height: 36px;
+    padding: 0 36px 0 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    outline: none;
+    background-color: #f1f5f9;
+    font-weight: 600;
+}
+
+.searchBox i {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+     color: #555; //color: #0f763c;
+     font-weight: 600; 
+}
+
+.checkBox{
+   
+}
+
+
+.modalHeader {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center; // center the title
+  align-items: center;
+}
+
+.centerTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  //color: #1f2937;
+  text-decoration: none !important;
+}
+
+.editIcon {
+  position: absolute;
+  right: 0; // push to end
+  font-size: 1rem;
+  color: #0f763c;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.editIcon:hover {
+  background-color: rgba(15, 118, 60, 0.12);
+  transform: scale(1.1);
+}
+
+.toggleButton {
+  width: fit-content;
+  height: 28px;
+
+  // The ToggleButton root element itself is the button
+  :global(.p-togglebutton) {
+    height: 28px;
+    padding: 0 14px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+    cursor: pointer;
+  }
+
+  // ON state — green
+  :global(.p-togglebutton.p-highlight),
+  :global(.p-togglebutton.p-component.p-highlight) {
+    background-color: #3F9F4E !important;
+    border-color: #3F9F4E !important;
+    color: #ffffff !important;
+  }
+
+  // OFF state — grey
+  :global(.p-togglebutton:not(.p-highlight)),
+  :global(.p-togglebutton.p-component:not(.p-highlight)) {
+    background-color: #9ca3af !important;
+    border-color: #9ca3af !important;
+    color: #ffffff !important;
+  }
+
+  // Hover — slightly darker
+  :global(.p-togglebutton.p-highlight:hover) {
+    background-color: #2e7d3a !important;
+    border-color: #2e7d3a !important;
+  }
+
+  :global(.p-togglebutton:not(.p-highlight):hover) {
+    background-color: #6b7280 !important;
+    border-color: #6b7280 !important;
+  }
+
+  // Remove focus ring outline
+  :global(.p-togglebutton:focus) {
+    box-shadow: 0 0 0 2px rgba(63, 159, 78, 0.3) !important;
+  }
+
+  &.active{
+    background-color: #3F9F4E;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+
+  &.inActive{
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+}
+
+
+.loaderWrapper {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+}
+
+.loaderImage {
+  width: 120px;
+  height: auto;
+}
+
+.ellipsisCell {
+  display: inline-block;   /* important */
+ // max-width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+//#0f763c

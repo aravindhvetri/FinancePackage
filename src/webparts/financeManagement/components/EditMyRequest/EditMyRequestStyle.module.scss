@@ -1,0 +1,112 @@
+.container {
+    width: 100%;
+}
+
+.headerRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.editTabs {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  border-bottom: 1px solid #e5e7eb; // light divider
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+/* Each tab */
+.editTab {
+  position: relative;
+  padding: 8px 4px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #6b7280; // muted text
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+/* Hover effect */
+.editTab:hover {
+  color: #111827;
+}
+
+/* Active tab */
+.activeEditTab {
+  color: #0c5e30; // subtle teal (matches your palette)
+  font-weight: 600;
+}
+
+/* Underline for active tab */
+.activeEditTab::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  width: 100%;
+  height: 2px;
+  background-color: #0c5e30;
+  border-radius: 2px;
+  
+}
+.reqEditBtnCon{
+display: flex;
+gap: 10px;
+align-items: start;
+}
+
+
+.reqEditBtn {
+    background-color: #f5f6f8;
+    color: #0f763c;
+    font-weight: 500;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
+}
+
+.submitButton {
+  background-color: #0f763c;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-family: osSemiBold, sans-serif;
+  font-size: 14px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all 100ms;
+
+  &:hover {
+    background-color: #054621;
+  }
+}
+
+.cancelButton{
+  background-color: #8c8c8c;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-family: osSemiBold, sans-serif;
+  font-size: 14px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all 100ms;
+
+  &:hover {
+    background-color: #545353;
+  }
+}
+
+.confirmMsg{
+      padding: 10px 0px;
+    text-align: center;
+    font-weight: 600;
+}

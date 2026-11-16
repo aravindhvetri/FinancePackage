@@ -1,0 +1,57 @@
+
+.dataTable {
+  width: 100%;
+
+  table {
+    width: 100%;
+
+    thead tr th {
+      padding: 0 8px;
+      font-family: osSemiBold, sans-serif;
+      font-size: 13.5px;
+      color: white;// #0b4d53;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      background-color: #3F9F4E;// #E6F7F9;
+    }
+
+    tbody tr {
+      &:hover {
+        background-color: rgb(238, 238, 238, .5);
+      }
+
+      td {
+        padding: 0 8px;
+        //font-family: osRegular, sans-serif;
+        font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif !important;;
+        font-size: 13px;
+        //color: #000;
+        color: rgba(0, 0, 0, 0.87);
+        font-weight: 500;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border: none;
+      }
+    }
+
+    tr {
+      height: 40px;
+      background-color: #fff;
+    }
+  }
+
+  .customEmptyMessage {
+    font-size: 15px;
+    font-family: osRegular, sans-serif;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    font-weight: 500;
+    border: none !important;
+  }
+
+}

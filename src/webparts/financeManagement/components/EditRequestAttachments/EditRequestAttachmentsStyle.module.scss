@@ -1,0 +1,163 @@
+/*  Main Container */
+.container {
+  padding: 16px;
+  background-color: #f7f9fb;
+  height: 100%;
+  border-radius: 8px;
+}
+
+/* Upload Box (drag & drop style look) */
+.uploadBox {
+  //border: 2px dashed #d0d7de;
+  border-radius: 8px;
+  padding: 24px;
+  //text-align: center;
+  background-color: #ffffff;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: #00bfa6;
+    background-color: #f0fffb;
+  }
+
+  input {
+    display: none;
+  }
+
+  /* Label style */
+  .uploadText {
+    color: #ff6a00;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .subText {
+    color: #666;
+    font-size: 13px;
+    margin-top: 4px;
+  }
+}
+
+.table{
+    height: auto;
+}
+.uploadBtn{
+      background-color: #0f766e;
+    /* padding-left: 100px; */
+    margin-left: 350px;
+    color: white;
+    border: transparent 1px solid;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.selectedFiles {
+  margin-top: 10px;
+}
+
+.fileItem {
+  font-size: 13px;
+  color: #475569;
+  margin-bottom: 4px;
+}
+
+.uploadLoader {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.uploadBtnDisabled {
+  background-color: #e2e8f0; // light gray
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+.dltBtnCon{
+  border: none;
+}
+
+.deleteIcon {
+  color: #ef4444; // red
+  cursor: pointer;
+  font-size: 13px;
+  transition: transform 0.2s ease, color 0.2s ease;
+  border:none
+}
+
+.deleteIcon:hover {
+  color: #dc2626;
+  transform: scale(1.15);
+}
+
+.customConfirmDialog {
+
+  :global(.p-dialog-header) {
+   
+    color: #dc2626;
+    font-weight: 600 !important;
+    font-size: 14px;
+    border: none;
+  }
+
+  :global(.p-dialog-content) {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #374151;
+    padding: 20px 24px !important;
+  }
+
+  :global(.p-dialog-footer) {
+    padding: 16px 24px;
+    border: none;
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+.confirmYesBtn {
+  background-color: #3F9F4E;
+  border: none !important;
+  padding: 6px 18px !important;
+  border-radius: 6px !important;
+  font-weight: 500;
+}
+
+.confirmYesBtn:hover {
+  background-color: #3F9F4E !important;
+}
+
+.confirmNoBtn {
+  background-color: #8c8c8c !important;
+   border: none !important;
+  padding: 6px 18px !important;
+  border-radius: 6px !important;
+  font-weight: 500;
+}
+
+.confirmNoBtn:hover {
+  text-decoration: underline;
+}
+
+.content {
+  width: 100%;
+}
+
+.loaderWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+}
+
+.loaderImage {
+  width: 70px;
+  animation: spin 1.2s linear infinite;
+}
+

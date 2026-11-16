@@ -1,0 +1,19 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "useGulp": false,
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.22.0",
+    "sdksVersions": {},
+    "version": "1.22.2",
+    "libraryName": "finance-management",
+    "libraryId": "da3b0f0e-8d19-459c-b981-6783edae71cc",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "FinanceManagement",
+    "solutionShortDescription": "FinanceManagement description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

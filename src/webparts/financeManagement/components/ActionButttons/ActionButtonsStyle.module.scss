@@ -1,0 +1,164 @@
+.actionButtonsContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.actionButton {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 100ms;
+    color: #0c5e30 ;
+
+    &.button {
+        font-size: 12px;
+        padding: 6px 8px;
+        background-color: rgba(45, 75, 81, 0.8);
+        white-space: nowrap;
+
+        &:hover {
+            background-color: rgba(45, 75, 81);
+        }
+
+        &.danger {
+            background-color: rgba(163, 36, 39, 0.8);
+
+            &:hover {
+                background-color: rgba(163, 36, 39);
+            }
+        }
+
+        &.info {
+            background-color: rgba(0, 123, 255, 0.8);
+
+            &:hover {
+                background-color: rgba(0, 123, 255);
+            }
+        }
+
+        &.warning {
+            background-color: rgba(255, 193, 7, 0.8);
+            color: #000;
+
+            &:hover {
+                background-color: rgba(255, 193, 7);
+            }
+        }
+
+        &.success {
+            background-color: rgba(40, 167, 69, 0.8);
+
+            &:hover {
+                background-color: rgba(40, 167, 69);
+            }
+        }
+
+        &.secondary {
+            background-color: rgba(108, 117, 125, 0.8);
+
+            &:hover {
+                background-color: rgba(108, 117, 125);
+            }
+        }
+
+        &.tertiary {
+            background-color: rgba(23, 162, 184, 0.8);
+
+            &:hover {
+                background-color: rgba(23, 162, 184);
+            }
+        }
+
+        &.light {
+            background-color: rgba(248, 249, 250, 0.8);
+            color: #000;
+
+            &:hover {
+                background-color: rgba(248, 249, 250);
+            }
+        }
+
+        &.dark {
+            background-color: rgba(52, 58, 64, 0.8);
+
+            &:hover {
+                background-color: rgba(52, 58, 64);
+            }
+        }
+
+        &.link {
+            background-color: transparent;
+            color: #0b4d53;
+            text-decoration: underline;
+            padding: 0;
+
+            &:hover {
+                background-color: transparent;
+                color: #054621;
+            }
+        }
+    }
+
+    &.icon {
+        border-radius: 50rem;
+        background-color: #D1EEF2;
+        color: #0c5e30 ;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        font-size: 16px;
+
+        &:hover {
+            background-color: rgba(45, 75, 81, 0.1);
+        }
+
+        i,
+        .pi {
+            color: #0c5e30 !important;
+        }
+
+        &.danger {
+            color: rgb(163, 36, 39);
+        }
+
+        &.info {
+            color: rgb(0, 123, 255);
+        }
+
+        &.warning {
+            color: rgb(255, 193, 7);
+        }
+
+        &.success {
+            color: rgb(40, 167, 69);
+        }
+
+        &.secondary {
+            color: rgb(108, 117, 125);
+        }
+
+        &.tertiary {
+            color: rgb(23, 162, 184);
+        }
+
+        &.light {
+            color: rgb(248, 249, 250);
+        }
+
+        &.dark {
+            color: rgb(52, 58, 64);
+        }
+
+         &.transparent {
+            color: rgba(40, 167, 69);
+            background-color: transparent;
+           
+
+        }
+    }
+
+}

@@ -1,0 +1,104 @@
+.field {
+    margin-bottom: 12px;
+}
+
+.label {
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #0B4D53;
+    font-size: 13px;
+}
+
+.inputArea,
+.dropdown,
+.inputTextarea,
+.inputText,
+.calendar,
+.peoplePicker input {
+    //width: 100%;
+     width: 90%;
+   
+}
+
+.dropdown,
+.inputText,
+.calendar,
+.peoplePicker input {
+    //height: 44px;
+    height: 35px;
+    
+}
+
+.inputTextarea,
+.inputText{
+    border: 1px solid #ced4da !important;
+    border-radius: 4px !important;
+
+    &:enabled:focus,
+    &:focus {
+        border: 1px solid #b7b7b7 !important;
+    }
+}
+
+.calendar input {
+    border: 1px solid #ced4da !important;
+    border-radius: 4px !important;
+}
+
+:global(.p-calendar .p-datepicker-trigger) {
+  background-color: #054621 !important; // Bootstrap green or use your preferred shade
+  border: none;
+  border-radius: 4px;
+  color: #fff; // Optional: make icon white for contrast
+}
+
+
+.peoplePicker {
+  width: 100%;
+
+  :global(.ms-PeoplePicker) {
+    width: 90%;
+    border: 1px solid #ced4da !important;
+    border-radius: 4px !important;
+    padding: 6px 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    background-color: #F1F5F9;
+  }
+
+  :global(.ms-PeoplePicker-selectedItems) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+
+  }
+  :global(.ms-BasePicker-text){
+border: none !important;
+  }
+
+  :global(.ms-PeoplePicker-input) {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    height: 32px;
+    flex-grow: 1;
+    min-width: 120px;
+  }
+
+  :global(.ms-PeoplePicker-persona) {
+    margin: 0;
+  }
+  
+}
+.errorText {
+  color: #ef4444;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.errorInput {
+  border: 1px solid #ef4444 !important;
+}

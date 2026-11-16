@@ -1,0 +1,272 @@
+.container {
+    padding-top: 8px;
+    padding-left: 25px;
+    margin: 0;
+    background-color: #f4fbfc;
+}
+
+.buttonsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.submitButton {
+  background-color: #3F9F4E; //#0f763c;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-family: osSemiBold, sans-serif;
+  font-size: 14px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all 100ms;
+  font-weight: 600;
+
+  &:hover {
+    background-color: #054621;
+  }
+}
+
+.cancelButton{
+  background-color: #8c8c8c;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-family: osSemiBold, sans-serif;
+  font-size: 14px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all 100ms;
+  font-weight: 600;
+
+  &:hover {
+    background-color: #545353;
+  }
+}
+
+.rejectButton{
+  background-color: #fc1212;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-family: osSemiBold, sans-serif;
+  font-size: 14px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all 100ms;
+
+  &:hover {
+    background-color: #c40404;
+  }
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 columns */
+  gap: 20px; /* spacing between fields */
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .formRow {
+    grid-template-columns: 1fr; /* stack vertically on mobile */
+  }
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px 20px;
+  align-items: start;
+}
+
+.toggleField {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.toggleLabel {
+  font-weight: 600;
+  //font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+   color: #0B4D53;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.toggleButton {
+  width: fit-content;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.formHeader {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.formTitle {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.reqEditBtn {
+    background-color: #f5f6f8;
+    color: #0f763c;
+    font-weight: 500;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
+}
+
+.confirmOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.confirmBox {
+  background: #e9f0f2;;
+  width: 420px;
+  border-radius: 8px;
+  padding: 20px;
+}
+.confirmTitle{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #0f763c;
+  }
+
+  .confirmMessage{
+    text-align: center;
+    font-weight: 600;
+  }
+
+.confirmButtons {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.noBtn{
+  width: 80px;
+  background-color: #8c8c8c;
+  font-weight: 600;
+  border: none;
+}
+.yesBtn{
+  width: 80px;
+  background-color: #3F9F4E;
+  font-weight: 600;
+  border: none;
+}
+.fileLabel {
+  font-size: 13px;
+  font-weight: 600;
+color: #0b4d53;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/*.fileLabel::after {
+  content: "*";
+  color: red;
+  font-size: 12px;
+}*/
+
+.fileField input[type="file"] {
+  border: 1px dashed #dcdcdc;
+  padding: 13px;
+  border-radius: 6px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 12px;
+  background-color: #fafafa;
+}
+
+.fileField input[type="file"]:hover {
+  border-color: #6c8cd5;
+}
+
+.attachmentPreview {
+  margin-top: 8px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.fileName {
+  font-size: 13px;
+  color: #333;
+}
+
+.downloadLink {
+  font-size: 12px;
+  color: #6c8cd5;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.checkBox{
+  margin: 0px;
+  width: 16px;
+  height: 16px;
+}
+
+.fileUploadWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.customFileButton {
+  background-color: #1f5c63;
+  color: white;
+   padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px ;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.customFileButton:hover {
+  background-color: #17474d;
+}
+
+.hiddenFileInput {
+  display: none;
+}
+
+.fileStatus {
+  color: #4b5563;
+  font-size: 13px;
+}
+
+.categoryLabel::after {
+  content: "*";
+  color: red;
+  font-size: 12px;
+  margin-left: 3px;
+}

@@ -1,0 +1,294 @@
+/* 🔹 Sidebar */
+.sidebar {
+  height: 80vh;
+  background: #f8f9fb;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  margin-right: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+/* Open / Close */
+.open {
+  width: 250px;
+}
+
+.closed {
+  width: 80px;
+}
+
+/* 🔹 Toggle Top Right */
+.topRight {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.toggleBtn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3f9f4e, #62e476);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.toggleBtn:hover {
+  transform: scale(1.1);
+}
+
+/* 🔹 Center Navigation */
+.centerNav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 🔹 Parent Menu */
+.menuItem {
+  padding: 8px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #444;
+  font-weight: 600;
+
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.menuItem:hover {
+  color: black;
+}
+
+.menuItem:active {
+  transform: scale(0.98);
+  color: white;
+}
+
+.menuItem i {
+  font-size: 14px;
+}
+
+/* 🔹 Active Parent */
+.active {
+  background: #3f9f4e;
+  transition: background-color 0.2s ease;
+  color: white;
+}
+
+/* 🔹 Sub Menu */
+.subMenu {
+  margin-left: 40px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.subItem:hover {
+  color: black;
+}
+
+.subItem:active {
+  color: white;
+}
+
+/* Vertical main tree line */
+.subMenu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: 2px;
+  height: 100%;
+  background: #cfd3da;
+}
+
+/* Child item */
+.subItem {
+  position: relative;
+  padding: 8px 10px 8px 20px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+/* Horizontal branch line */
+.subItem::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  width: 12px;
+  height: 2px;
+  background: #cfd3da;
+}
+
+/* Remove extra vertical line for last item */
+.subItem:last-child::after {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  width: 2px;
+  height: 50%;
+  background: #f8f9fb;
+  /* match sidebar background */
+}
+
+
+/* Active Child */
+.activeChild {
+  background: #3f9f4e;
+  color: white;
+
+}
+
+.activeChild:hover {
+  background: #3f9f4e;
+  color: white;
+
+}
+
+/* Smooth dropdown animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🔹 Child */
+.subItem {
+  padding: 8px 10px;
+  margin-bottom: 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #555;
+  font-weight: 600;
+
+  transition: background-color 0.2s ease;
+}
+
+
+
+/* 🔹 Active Child */
+.activeChild {
+  background: #3f9f4e;
+  transition: background-color 0.2s ease;
+  color: white;
+}
+
+
+/* 🔹 Push navigation to top & user to bottom */
+.centerNav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 🔹 Bottom User Section */
+.bottomUser {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+}
+
+.userImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.userName {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.userEmail {
+  font-size: 12px;
+  color: #777;
+}
+
+.sidebar {
+  background-color: transparent;
+  color: black;
+  height: 100vh;
+  padding-top: 20px;
+  width: 220px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 14px 20px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border-radius: 8px;
+}
+
+.sidebar li:hover {
+  background-color: rgb(238, 238, 238, .5);
+}
+
+.active {
+  background-color: rgb(238, 238, 238, .5); // #D4F2D8;
+  color: #3F9F4E;
+  font-weight: 600;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 25px;
+  margin-left: 10px;
+}
+
+.logo {
+  width: 135px;
+  height: auto;
+}
+
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+.menuLabel {
+  font-size: 13px;
+}
